@@ -225,11 +225,11 @@ h3 {
   margin-left: 12%;
 }
 
-.dreams {
+.dreams, .books {
   margin-top: 8px;
 }
 
-.history, .dreams {
+.history, .dreams, .books{
   font-style: italic;
 }
 
