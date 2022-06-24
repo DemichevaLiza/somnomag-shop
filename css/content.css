@@ -636,6 +636,19 @@ h2 {
   display: none;
 }
 
+.close6{
+  position: absolute;
+  left: 325px;
+  top: 5px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #05003E;
+  cursor: pointer;
+  z-index: 1000;
+
+}
 .arrow, .arrowblue {
   background-repeat: no-repeat;
   position: absolute;
@@ -855,7 +868,7 @@ font-size: 18px;
 color: #05003E;
 position: absolute;
 left: 1095px;
-top: 700px;
+top: 685px;
 }
 
 .vector3 {
@@ -871,6 +884,26 @@ top: 700px;
   z-index: 2;
 }
 
-.productinfo1 {
+.productinfo1, .productinfo2, .productinfo3, .productinfo4, .productinfo5, .productinfo6, .productinfo7 {
   display: none;
+}
+
+.welldone{
+width: 350px;
+height: 200px;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+background: #FFFFFF;
+border: 1px solid #05003E;
+display: none;
+}
+
+.welltext {
+display: flex;
+justify-content: center;
+margin-top: 26%;
 }

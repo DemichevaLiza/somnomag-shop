@@ -281,3 +281,15 @@ $(document).ready(function() {
     $('.arrowblue').css('display', 'none');
   });
 });
+
+$(document).ready(function() {
+  $('.buy').click(function() {
+    $('.welldone').fadeIn();
+  });
+});
+
+$(document).ready(function() {
+  $('.close6').click(function() {
+    $('.welldone').fadeOut();
+  });
+});
