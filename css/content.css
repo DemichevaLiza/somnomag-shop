@@ -127,6 +127,18 @@ h3 {
   display: none;
 }
 
+.vector {
+  background-image: url('../img/Vector.svg');
+  background-repeat: no-repeat;
+  width: 120%;
+  height: 120%;
+  background-size: 40%;
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  display: none;
+}
+
 .shapemain {
   background-image: url('../img/shapemain.svg');
   display: block;
@@ -192,14 +204,14 @@ h3 {
   position: absolute;
 }
 
-.shape4a-off {
-  background-image: url('../img/shape4.svg');
+.shape1a {
+  background-image: url('../img/shape1.svg');
+  background-size: 38%;
+  left: 28%;
+  top: 5%;
   width: 100%;
   height: 100%;
-  display: none;
-  background-size: 60%;
-  top: 10%;
-  left: 20%;
+  display: block;
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -219,17 +231,17 @@ h3 {
   position: absolute;
 }
 
-.points {
+.points, .points1 {
   display: flex;
   flex-flow: column;
   margin-left: 12%;
 }
 
-.dreams, .books {
+.dreams, .books, .souvenir {
   margin-top: 8px;
 }
 
-.history, .dreams, .books{
+.history, .dreams, .books, .souvenir, .fordream {
   font-style: italic;
 }
 
@@ -339,7 +351,7 @@ h3 {
   height: 100%;
 }
 
-.slide3{
+.slide3 {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -371,7 +383,6 @@ h3 {
   -o-transition: background ease-in-out .5s;
   transition: background ease-in-out .5s;
 }
-
 
 .slide3:hover {
   background-image: url('../img/spaceslide.svg');
@@ -446,6 +457,7 @@ h3 {
   -o-transition: background ease-in-out .5s;
   transition: background ease-in-out .5s;
 }
+
 .wrapper>input {
   display: none;
 }
@@ -542,7 +554,7 @@ h3 {
   display: none;
 }
 
-.info, .info2, .info3,.info4,.info5{
+.info, .info2, .info3, .info4, .info5 {
   display: none;
   position: absolute;
   width: 24px;
@@ -587,24 +599,24 @@ h2 {
 }
 
 .infotext, .infotext2 {
-margin-top: 22px;
-margin-left: 125px;
-width: 402px;
+  margin-top: 22px;
+  margin-left: 125px;
+  width: 402px;
 }
 
-.infotext3{
+.infotext3 {
   margin-top: 22px;
   margin-left: 111px;
   width: 440px;
 }
 
-.infotext4{
+.infotext4 {
   margin-top: 22px;
   margin-left: 129px;
   width: 403px;
 }
 
-.infotext5{
+.infotext5 {
   margin-top: 22px;
   margin-left: 116px;
   width: 430px;
@@ -624,8 +636,7 @@ width: 402px;
   display: none;
 }
 
-.arrow {
-  background-image: url('../img/arrow.svg');
+.arrow, .arrowblue {
   background-repeat: no-repeat;
   position: absolute;
   z-index: 100;
@@ -635,4 +646,231 @@ width: 402px;
   height: 16px;
   display: none;
   cursor: pointer;
+}
+
+.arrow {
+  background-image: url('../img/Arrow.svg');
+}
+
+.arrowblue{
+  background-image: url('../img/Arrowblue.svg');
+}
+
+.dreamsproducts {
+  height: 510px;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #05003E white;
+  /* display: grid; */
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 80px;
+  position: absolute;
+  justify-content: center;
+  left: 24%;
+  top: 18%;
+  display: none;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 10px;
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #05003E;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+.dreamproduct1, .dreamproduct2, .dreamproduct3, .dreamproduct4, .dreamproduct5, .dreamproduct6, .dreamproduct7 {
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  width: 320px;
+  height: 408px;
+  border: 1px solid #05003E;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.dreamproduct {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 320px;
+  height: 408px;
+  background-color: #05003E;
+  border: 1px solid #05003E;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background-image: url('../img/bottle1.svg');
+  background-size: 80%;
+  margin-left: 12%;
+  margin-top: 10%;
+}
+
+.img2 {
+  background-image: url('../img/bottle2.svg');
+  background-size: 65%;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.img3 {
+  background-image: url('../img/bottle3.svg');
+  background-size: 71%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.img4 {
+  background-image: url('../img/pajamas1.png');
+  background-size: 100%;
+}
+
+.img5 {
+  background-image: url('../img/hears.svg');
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.img6 {
+  background-image: url('../img/pillow1.png');
+  background-size: 100%;
+  margin-top: 5%;
+}
+
+.img7 {
+  background-image: url('../img/roadpillow1.png');
+  background-size: 100%;
+  margin-top: 15%;
+}
+
+.text1 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #05003E;
+  margin-top: 12px;
+}
+
+.text2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #05003E;
+  width: 375px;
+}
+
+.textproduct1 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.textproduct2 {
+  margin-left: 50px;
+}
+
+.textproduct3 {
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.imginfo {
+  background-image: url('../img/bottle1.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120%;
+  margin-left: 55%;
+  margin-top: -22%;
+  background-size: 40%;
+}
+
+.price, .price2, .price3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+  color: #05003E;
+}
+
+.price2 {
+  margin-left: 30px;
+}
+
+.price3 {
+  margin-left: 18px;
+}
+
+.alltext {
+  display: grid;
+  grid-template-columns: repeat(2, 65%);
+}
+
+.plashka {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid #05003E;
+}
+
+.buy {
+width: 169px;
+font-family: 'Raleway';
+font-style: normal;
+font-size: 18px;
+color: #05003E;
+position: absolute;
+left: 1095px;
+top: 700px;
+}
+
+.vector3 {
+  background-image: url('../img/Vector3.svg');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  width: 619px;
+  height: 862px;
+  top: -56px;
+  left: -65px;
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 2;
+}
+
+.productinfo1 {
+  display: none;
 }
