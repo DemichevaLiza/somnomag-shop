@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Магазин сновидений</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/jQuery.Brazzers-Carousel.min.css">
+</head>
+
+<body>
+
+  <div class="containermain">
+    <h1><a href="index.html" class="logo">сомномаг</a></h1>
+    <ul class="containertable">
+      <li class="about"><a href="about.html" class="underline-one">о магазине</a></li>
+      <li class="shop"><a href="shop.html" class="underline-one">продукция</a></li>
+      <li class="event"><a href="#" class="abouta">мероприятия</a></li>
+      <li class="contacts"><a href="contacts.html" class="underline-one">контакты</a></li>
+    </ul>
+    <div class="basket"></div>
+  </div>
+  <div class="layout">
+<div class="section-stick">
+  <div class="stick active"></div>
+</div>
+<section class="s1">
+  <div class="note">
+    <a href="forma.html">записаться</a>
+  </div>
+<h4>аукцион снов 2.0</h4>
+<p>Аукцион снов — это возможность ухватить редкие сочетания жанров. Возможно вы станете единственным счастливчиком, который приобретёт свой уникальный сон.</p>
+<p class="enter">вход по записи</p>
+<p class="p2">дата: 12.12</p>
+<div class="fontposter">
+</div>
+</section>
+<section class="s2">
+
+</section>
+<section class="s3">
+
+</section>
+<section class="s4">
+
+</section>
+<section class="s5">
+
+</section>
+</div>
+
+<script type="text/javascript">
+const TIME_OUT = 600 // It should be the same transition time of the sections
+const body = document.querySelector('body')
+const sectionsQty = document.querySelectorAll('section').length
+const sectionStick = document.querySelector('.section-stick')
+let startFlag = true
+let initialScroll = window.scrollY
+let qty = 1,
+main = null,
+next = null
+// Add child elements in .section-stick as number of sections exist
+Array(sectionsQty)
+.fill()
+.forEach(() => {
+  sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
+})
+console.log('SLIDE', qty)
+// Listening to scroll event
+window.onscroll = () => {
+if (startFlag) {
+  const scrollDown = this.scrollY >= initialScroll
+  const scrollLimit = qty >= 1 && qty <= sectionsQty
+  // Verify that the scroll does not exceed the number of sections
+  if (scrollLimit) {
+    body.style.overflowY = 'hidden' // Lock el scroll
+    if (scrollDown && qty < sectionsQty) {
+      main = document.querySelector(`section.s${qty}`)
+      next = document.querySelector(`section.s${qty + 1}`)
+      main.style.transform = 'translateY(-100vh)'
+      next.style.transform = 'translateY(0)'
+      qty++
+    } else if (!scrollDown && qty > 1) {
+      main = document.querySelector(`section.s${qty - 1}`)
+      next = document.querySelector(`section.s${qty}`)
+      main.style.transform = 'translateY(0)'
+      next.style.transform = 'translateY(100vh)'
+      qty--
+    }
+    // Scroll progressbar
+    const active = document.querySelector('.section-stick .stick.active')
+    active.style.top = (62 + 30) * (qty - 1) + 'px'
+  }
+  console.log('SLIDE', qty)
+  // Wait for the scrolling to finish to reset the values
+  setTimeout(() => {
+    initialScroll = this.scrollY
+    startFlag = true
+    body.style.overflowY = 'scroll' // Unlock scroll
+  }, TIME_OUT)
+  startFlag = false
+}
+// Keep scrollbar in the middle of the viewport
+window.scroll(0, window.screen.height)
+}
+</script>
+
+</body>
+
+</html>

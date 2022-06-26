@@ -1,0 +1,370 @@
+.formamain {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  margin: auto;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #05003E;
+}
+
+.formatext {
+  display: flex;
+  margin-top: 32px;
+}
+
+.formatext1 {
+  display: flex;
+  margin-top: -32px;
+}
+
+.form-split {
+  display: flex;
+  justify-content: space-around;
+}
+
+.radioflex {
+  display: flex;
+  margin-top: 32px;
+}
+
+.yesorno {
+  display: flex;
+  margin-left: 230px;
+}
+
+.yesorno1 {
+  display: flex;
+  margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  display: block;
+  width: 330px;
+  position: relative;
+  margin: 10px auto;
+  margin-left: 25px;
+  height: 40px;
+  padding: 0 18px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: hsla(245, 100%, 12%, 1): border: 0.6px solid #05003E;
+}
+
+textarea {
+  display: block;
+  width: 722px;
+  position: relative;
+  margin: 10px auto;
+  margin-left: 25px;
+  height: 80px;
+  padding: 0 18px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: hsla(245, 100%, 12%, 1): border: 2px solid #05003E;
+  font-family: "Raleway"
+}
+
+.forma1 {
+  margin-left: 30px;
+}
+
+.forma2 {
+  margin-left: 310px;
+}
+
+.forma3 {
+  margin-left: 240px;
+}
+
+.forma4 {
+  margin-left: 295px;
+}
+
+.forma5 {
+  margin-left: 30px;
+  margin-top: 32px;
+}
+
+button {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 100;
+  letter-spacing: -.022em;
+  font-family: "Raleway";
+  background:
+      hsla(245, 100%, 12%, 1);
+  border: 1px solid #07c;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  min-width: 30px;
+  padding: 4px 15px;
+  text-align: center;
+  white-space: nowrap;
+  margin: 15px auto;
+}
+
+.check, .check2 {
+  left: 25px;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.2;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #05003e;
+}
+
+#cbx:checked+.check svg {
+  stroke: #05003e;
+}
+
+#cbx:checked+.check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked+.check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+/* 2nd checkbox */
+.check2:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check2 svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.2;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check2 svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check2 svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check2:hover:before {
+  opacity: 1;
+}
+
+.check2:hover svg {
+  stroke: #05003e;
+}
+
+#cbx2:checked+.check2 svg {
+  stroke: #05003e;
+}
+
+#cbx2:checked+.check2 svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx2:checked+.check2 svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+/* 1 radio */
+.rad-label {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: hsla(0, 0%, 100%);
+}
+
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background:
+      hsla(245, 100%, 12%, 1);
+  position: relative;
+}
+
+.rad-design::before {
+  content: "";
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: hsla(220, 12%, 81%, 1);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: hsla(245, 100%, 12%, 0.6);
+  margin-left: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway";
+  transition: 0.3s;
+}
+
+.rad-input:checked~.rad-text {
+  color: hsla(245, 100%, 12%, 1);
+}
+
+/* 2nd radio */
+.rad-label2 {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rad-label2:hover,
+.rad-label2:focus-within {
+  background: hsla(0, 0%, 100%);
+}
+
+.rad-input2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design2 {
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background:
+      hsla(245, 100%, 12%, 1);
+  position: relative;
+}
+
+.rad-design2::before {
+  content: "";
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: hsla(220, 12%, 81%, 1);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.rad-input2:checked+.rad-design2::before {
+  transform: scale(0);
+}
+
+.rad-text2 {
+  color: hsla(245, 100%, 12%, 0.6);
+  margin-left: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway";
+  transition: 0.3s;
+}
+
+.rad-input2:checked~.rad-text2 {
+  color: hsla(245, 100%, 12%, 1);
+}
+
+.formas2 {
+  display: none;
+}

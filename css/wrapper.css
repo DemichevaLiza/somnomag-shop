@@ -1,0 +1,512 @@
+.wrapper, .wrapper2, .wrapper3 {
+  height: 160px;
+  top: 12%;
+  left: 22%;
+  position: absolute;
+  z-index: 50;
+}
+
+
+.slider {
+  height: 550px;
+  position: absolute;
+  width: 1000px;
+}
+
+.slider2 {
+  height: 540px;
+  position: absolute;
+  width: 1000px;
+}
+
+.slide1 {
+  background-image: url('../img/flyingdark.svg');
+}
+
+.slide2 {
+  background-image: url('../img/mashroomslidedark.svg');
+}
+
+.slide3 {
+  background-image: url('../img/spaceslidedark.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide4 {
+  background-image: url('../img/trainslidedark.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide5 {
+  background-image: url('../img/desertslidedark.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide6 {
+  background-image: url('../img/book2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: -5%;
+  width: 100%;
+  top: -5%;
+  height: 100%;
+}
+
+.slide7 {
+  background-image: url('../img/book1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  left: -5%;
+  top: -5%;
+  height: 100%;
+}
+
+.slide8 {
+  background-image: url('../img/book3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  left: -5%;
+  top: -5%;
+  height: 100%;
+}
+
+.slide9 {
+  background-image: url('../img/book4.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  left: -5%;
+  top: -5%;
+  height: 100%;
+}
+
+.slide10 {
+  background-image: url('../img/book5.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  left: -5%;
+  top: -5%;
+  height: 100%;
+}
+
+.slide11 {
+  background-image: url('../img/winx (1).png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  left: 10%;
+  top: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide12 {
+  background-image: url('../img/winx (2).png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 5%;
+}
+
+.slide13 {
+  background-image: url('../img/winx (3).png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 5%;
+}
+
+.slide14 {
+  background-image: url('../img/winx (4).png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 5%;
+}
+
+.slide15 {
+  background-image: url('../img/winx (5).png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 5%;
+}
+
+
+.slide1, .slide2 {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.slide3 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide1:hover {
+  background-image: url('../img/flying.svg');
+  content: '';
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide2:hover {
+  background-image: url('../img/mashroomslide.svg');
+  content: '';
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide3:hover {
+  background-image: url('../img/spaceslide.svg');
+  content: '';
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide4:hover {
+  background-image: url('../img/trainslide.svg');
+  content: '';
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide5:hover {
+  background-image: url('../img/desertslide.svg');
+  content: '';
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide1:not(:hover) {
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide2:not(:hover) {
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide3:not(:hover) {
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide4:not(:hover) {
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.slide5:not(:hover) {
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.wrapper>input {
+  display: none;
+}
+
+.wrapper2>input {
+  display: none;
+}
+
+.wrapper3>input {
+  display: none;
+}
+
+
+.slides {
+  height: inherit;
+  position: absolute;
+  width: inherit;
+}
+
+.wrapper .controls {
+  width: 200px;
+  left: 350px;
+  top: 400px;
+  position: absolute;
+}
+
+.wrapper2 .controls {
+  width: 200px;
+  left: 350px;
+  top: 400px;
+  position: absolute;
+}
+
+.wrapper3 .controls {
+  width: 200px;
+  left: 350px;
+  top: 400px;
+  position: absolute;
+}
+
+
+/* for wrapper 1 */
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper label:after {
+  border: 2px solid #05003E;
+  content: " ";
+  display: block;
+  height: 14px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 160px 10px 0 14px;
+  position: relative;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked~.controls label:nth-of-type(1),
+#slide2:checked~.controls label:nth-of-type(2),
+#slide3:checked~.controls label:nth-of-type(3),
+#slide4:checked~.controls label:nth-of-type(4),
+#slide5:checked~.controls label:nth-of-type(5) {
+  background: #05003E;
+}
+
+#slide1:checked~.slider>.slide1,
+#slide2:checked~.slider>.slide2,
+#slide3:checked~.slider>.slide3,
+#slide4:checked~.slider>.slide4,
+#slide5:checked~.slider>.slide5 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* for wrapper 2 */
+.wrapper2 label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper2 label:after {
+  border: 2px solid white;
+  content: " ";
+  display: block;
+  height: 14px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper2 label {
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 160px 10px 0 14px;
+  position: relative;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.wrapper2 label:hover,
+#slide6:checked~.controls label:nth-of-type(1),
+#slide7:checked~.controls label:nth-of-type(2),
+#slide8:checked~.controls label:nth-of-type(3),
+#slide9:checked~.controls label:nth-of-type(4),
+#slide10:checked~.controls label:nth-of-type(5) {
+  background: white;
+}
+
+#slide6:checked~.slider2>.slide6,
+#slide7:checked~.slider2>.slide7,
+#slide8:checked~.slider2>.slide8,
+#slide9:checked~.slider2>.slide9,
+#slide10:checked~.slider2>.slide10 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* for wrapper 3 */
+.wrapper3 label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper3 label:after {
+  border: 2px solid white;
+  content: " ";
+  display: block;
+  height: 14px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper3 label {
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 160px 10px 0 14px;
+  position: relative;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background ease-in-out .5s;
+  -moz-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s;
+}
+
+.wrapper3 label:hover,
+#slide11:checked~.controls label:nth-of-type(1),
+#slide12:checked~.controls label:nth-of-type(2),
+#slide13:checked~.controls label:nth-of-type(3),
+#slide14:checked~.controls label:nth-of-type(4),
+#slide15:checked~.controls label:nth-of-type(5) {
+  background: white;
+}
+
+#slide11:checked~.slider2>.slide11,
+#slide12:checked~.slider2>.slide12,
+#slide13:checked~.slider2>.slide13,
+#slide14:checked~.slider2>.slide14,
+#slide15:checked~.slider2>.slide15 {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.slides {
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 0;
+  -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+  -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+  -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+  transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
