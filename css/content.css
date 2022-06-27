@@ -140,7 +140,7 @@ h3 {
   background-image: url('../img/Vector.svg');
   background-repeat: no-repeat;
   width: 120%;
-  height: 120%;
+  height: 54%;
   background-size: 40%;
   position: absolute;
   top: 30%;
@@ -622,7 +622,13 @@ html *::-webkit-scrollbar-thumb {
   margin-top: 80px;
 }
 
-.imginfo, .imginfo2, .imginfo3, .imginfo4, .imginfo5, .imginfo6, .imginfo7 {
+.textproduct4 {
+  margin-left: 57px;
+  margin-top: 120px;
+  z-index: 10;
+}
+
+.imginfo, .imginfo2, .imginfo3, .imginfo4, .imginfo5, .imginfo6, .imginfo6a, .imginfo7 {
   background-repeat: no-repeat;
   width: 100%;
   height: 120%;
@@ -650,7 +656,46 @@ html *::-webkit-scrollbar-thumb {
 }
 
 .imginfo4 {
-  background-image: url('../img/pajamas1.png');
+  background-image: url('../img/pajamas2.png');
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.imginfo5 {
+  background-image: url('../img/ears.png');
+  background-size: 60%;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.imginfo6 {
+  background-image: url('../img/pillow1a.png');
+  background-size: 80%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: block;
+}
+
+.imginfo6a {
+  background-image: url('../img/pillow2a.png');
+  background-size: 80%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: none;
+}
+
+.imginfo7 {
+  background-image: url('../img/roadpillow1a.png');
+  background-size: 80%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: none;
 }
 
 .price, .price2, .price3 {
@@ -706,7 +751,7 @@ html *::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: 90%;
   width: 619px;
-  height: 862px;
+  height: 805px;
   top: -56px;
   left: -65px;
   transform: rotate(180deg);
@@ -942,4 +987,48 @@ iframe {
   top: 88%;
   z-index: 10;
   display: none;
+}
+
+.choose {
+  display: flex;
+  margin-left: 57px;
+}
+
+.option1 {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #05003E;
+  cursor: pointer;
+}
+
+.option2 {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-left: 12px;
+  background-color: #05003E;
+  cursor: pointer;
+}
+
+.optioncircle {
+  z-index: 12;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #05003E;
+  margin-top: 25%;
+  margin-left: 25%;
+  display: none;
+}
+
+.optioncircle2 {
+  z-index: 12;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin-top: 25%;
+  margin-left: 25%;
+  display: block;
 }

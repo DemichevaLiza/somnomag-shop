@@ -23,89 +23,173 @@
     <div class="basket"></div>
   </div>
   <div class="layout">
-<div class="section-stick">
-  <div class="stick active"></div>
-</div>
-<section class="s1">
-  <div class="note">
-    <a href="forma.html">записаться</a>
+    <div class="section-stick">
+      <div class="stick active"></div>
+    </div>
+    <section class="s1">
+      <div class="note">
+        <a href="forma.html">записаться</a>
+      </div>
+      <h4>аукцион снов 2.0</h4>
+      <p>Аукцион снов — это возможность ухватить редкие сочетания жанров. Возможно вы станете единственным счастливчиком, который приобретёт свой уникальный сон.</p>
+      <p class="enter">вход по записи</p>
+      <p class="data">дата: 12.12</p>
+      <div class="ballcheck">
+        <label class="rad-label3">
+          <input type="radio" class="rad-input3" name="rad">
+          <div class="rad-design3"></div>
+        </label>
+        <label class="rad-label4">
+          <input type="radio" class="rad-input4" name="rad">
+          <div class="rad-design4"></div>
+        </label>
+        <label class="rad-label5">
+          <input type="radio" class="rad-input5" name="rad">
+          <div class="rad-design5"></div>
+        </label>
+      </div>
+      <div class="fontposter"></div>
+      <div class="fontposter2"></div>
+      <div class="fontposter3"></div>
+    </section>
+    <section class="s2">
+      <div class="con">
+        <div class="c"></div>
+        <div class="o"></div>
+        <div class="n"></div>
+      </div>
+      <h4 class="h4">мастер-класс</h4>
+      <div class="note">
+        <a href="forma.html">записаться</a>
+      </div>
+      <p class="data">дата: 20.12</p>
+    </section>
+    <section class="s3">
+      <div class="note">
+        <a href="forma.html">записаться</a>
+      </div>
+      <h4>расскажи свой сон</h4>
+      <p class="open">Открытый микрофон сновидений. Вам приснилось захватывающее приключение? Расскажите его всем! А если боитесь публики, то приходите послушать чужие истории.</p>
+      <p class="enter">вход по записи</p>
+      <p class="data">дата: 12.12</p>
+      <div class="ballcheck">
+        <label class="rad-label6">
+          <input type="radio" class="rad-input6" name="rad">
+          <div class="rad-design6"></div>
+        </label>
+        <label class="rad-label7">
+          <input type="radio" class="rad-input7" name="rad">
+          <div class="rad-design7"></div>
+        </label>
+        <label class="rad-label8">
+          <input type="radio" class="rad-input8" name="rad">
+          <div class="rad-design8"></div>
+        </label>
+        <label class="rad-label9">
+          <input type="radio" class="rad-input9" name="rad">
+          <div class="rad-design9"></div>
+        </label>
+      </div>
+      <div class="tell1"></div>
+      <div class="tell2"></div>
+      <div class="tell3"></div>
+      <div class="tell4"></div>
+    </section>
+    <section class="s4">
+      <div class="note">
+        <a href="forma.html">записаться</a>
+      </div>
+      <h4>создай свой сон</h4>
+      <p>Если вы не знаете какой жанр сновидения выбрать, то мастер-клас по их созданию точно для вас. Попробуйте совместить все свои любимые жанры.</p>
+      <p class="enter">вход по записи</p>
+      <p class="data">дата: 01.03</p>
+      <div class="ballcheck">
+        <label class="rad-label10">
+          <input type="radio" class="rad-input10" name="rad">
+          <div class="rad-design10"></div>
+        </label>
+        <label class="rad-label11">
+          <input type="radio" class="rad-input11" name="rad">
+          <div class="rad-design11"></div>
+        </label>
+        <label class="rad-label12">
+          <input type="radio" class="rad-input12" name="rad">
+          <div class="rad-design12"></div>
+        </label>
+      </div>
+      <div class="obraz1"></div>
+      <div class="obraz2"></div>
+      <div class="obraz3"></div>
+    </section>
+    <section class="s5">
+      <div class="con">
+        <div class="paper1"></div>
+        <div class="paper2"></div>
+        <div class="paper3"></div>
+      </div>
+      <h4 class="h4">аукцион снов</h4>
+      <div class="note">
+        <a href="404.html">записаться</a>
+      </div>
+      <p class="data">дата: 20.12</p>
+    </section>
   </div>
-<h4>аукцион снов 2.0</h4>
-<p>Аукцион снов — это возможность ухватить редкие сочетания жанров. Возможно вы станете единственным счастливчиком, который приобретёт свой уникальный сон.</p>
-<p class="enter">вход по записи</p>
-<p class="p2">дата: 12.12</p>
-<div class="fontposter">
-</div>
-</section>
-<section class="s2">
 
-</section>
-<section class="s3">
-
-</section>
-<section class="s4">
-
-</section>
-<section class="s5">
-
-</section>
-</div>
-
-<script type="text/javascript">
-const TIME_OUT = 600 // It should be the same transition time of the sections
-const body = document.querySelector('body')
-const sectionsQty = document.querySelectorAll('section').length
-const sectionStick = document.querySelector('.section-stick')
-let startFlag = true
-let initialScroll = window.scrollY
-let qty = 1,
-main = null,
-next = null
-// Add child elements in .section-stick as number of sections exist
-Array(sectionsQty)
-.fill()
-.forEach(() => {
-  sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
-})
-console.log('SLIDE', qty)
-// Listening to scroll event
-window.onscroll = () => {
-if (startFlag) {
-  const scrollDown = this.scrollY >= initialScroll
-  const scrollLimit = qty >= 1 && qty <= sectionsQty
-  // Verify that the scroll does not exceed the number of sections
-  if (scrollLimit) {
-    body.style.overflowY = 'hidden' // Lock el scroll
-    if (scrollDown && qty < sectionsQty) {
-      main = document.querySelector(`section.s${qty}`)
-      next = document.querySelector(`section.s${qty + 1}`)
-      main.style.transform = 'translateY(-100vh)'
-      next.style.transform = 'translateY(0)'
-      qty++
-    } else if (!scrollDown && qty > 1) {
-      main = document.querySelector(`section.s${qty - 1}`)
-      next = document.querySelector(`section.s${qty}`)
-      main.style.transform = 'translateY(0)'
-      next.style.transform = 'translateY(100vh)'
-      qty--
+  <script type="text/javascript">
+    const TIME_OUT = 600 // It should be the same transition time of the sections
+    const body = document.querySelector('body')
+    const sectionsQty = document.querySelectorAll('section').length
+    const sectionStick = document.querySelector('.section-stick')
+    let startFlag = true
+    let initialScroll = window.scrollY
+    let qty = 1,
+      main = null,
+      next = null
+    // Add child elements in .section-stick as number of sections exist
+    Array(sectionsQty)
+      .fill()
+      .forEach(() => {
+        sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
+      })
+    console.log('SLIDE', qty)
+    // Listening to scroll event
+    window.onscroll = () => {
+      if (startFlag) {
+        const scrollDown = this.scrollY >= initialScroll
+        const scrollLimit = qty >= 1 && qty <= sectionsQty
+        // Verify that the scroll does not exceed the number of sections
+        if (scrollLimit) {
+          body.style.overflowY = 'hidden' // Lock el scroll
+          if (scrollDown && qty < sectionsQty) {
+            main = document.querySelector(`section.s${qty}`)
+            next = document.querySelector(`section.s${qty + 1}`)
+            main.style.transform = 'translateY(-100vh)'
+            next.style.transform = 'translateY(0)'
+            qty++
+          } else if (!scrollDown && qty > 1) {
+            main = document.querySelector(`section.s${qty - 1}`)
+            next = document.querySelector(`section.s${qty}`)
+            main.style.transform = 'translateY(0)'
+            next.style.transform = 'translateY(100vh)'
+            qty--
+          }
+          // Scroll progressbar
+          const active = document.querySelector('.section-stick .stick.active')
+          active.style.top = (62 + 30) * (qty - 1) + 'px'
+        }
+        console.log('SLIDE', qty)
+        // Wait for the scrolling to finish to reset the values
+        setTimeout(() => {
+          initialScroll = this.scrollY
+          startFlag = true
+          body.style.overflowY = 'scroll' // Unlock scroll
+        }, TIME_OUT)
+        startFlag = false
+      }
+      // Keep scrollbar in the middle of the viewport
+      window.scroll(0, window.screen.height)
     }
-    // Scroll progressbar
-    const active = document.querySelector('.section-stick .stick.active')
-    active.style.top = (62 + 30) * (qty - 1) + 'px'
-  }
-  console.log('SLIDE', qty)
-  // Wait for the scrolling to finish to reset the values
-  setTimeout(() => {
-    initialScroll = this.scrollY
-    startFlag = true
-    body.style.overflowY = 'scroll' // Unlock scroll
-  }, TIME_OUT)
-  startFlag = false
-}
-// Keep scrollbar in the middle of the viewport
-window.scroll(0, window.screen.height)
-}
-</script>
+  </script>
 
 </body>
 

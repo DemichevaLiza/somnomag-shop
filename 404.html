@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Код страницы 404</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/jQuery.Brazzers-Carousel.min.css">
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      overflow: hidden;
+      font-family: "Raleway";
+    }
+
+    .over {
+      background-image: url('img/img404.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      /* Масштабирует картинку сохраняя пропорции */
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      left: -25%;
+      right: 0;
+      top: -45%;
+      bottom: 0;
+    }
+
+    .p404 {
+      margin-top: 240px;
+      text-align: center;
+      font-family: "Raleway";
+      text-transform: uppercase;
+      font-size: 6em;
+      color: white;
+      position: relative;
+      color: #fff;
+      z-index: 2;
+      font-weight: 200;
+    }
+
+    .notfound {
+      text-align: center;
+      color: #fff;
+      font-family: "Raleway";
+      font-size: 1.7em;
+      position: relative;
+      z-index: 2;
+      margin-top: 2%;
+    }
+
+    .underline-two {
+      font-size: 1.2em;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      width: 290px;
+      margin-left: 41%;
+      margin-top: 1%;
+    }
+
+    .underline-two:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 1.5px;
+      /* Высота линии */
+      background-color: #05003E;
+      /* Цвет подчеркивания при исчезании линии*/
+      transition: width 1s;
+      /* Время эффекта */
+      z-index: 10;
+    }
+
+    .underline-two:hover:after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 1.5px;
+      /* Высота линии */
+      background-color: #fff;
+      /* Цвет подчеркивания при появлении линии*/
+      transition: width 1s;
+      /* Время эффекта */
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="over"></div>
+  <div class="p404">404</div>
+  <div class="notfound">вы потерялись<br></div>
+  <a href="index.html" class="underline-two"> перейти на главную страницу...</a>
+</body>
+
+</html>

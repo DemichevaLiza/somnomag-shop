@@ -280,7 +280,7 @@ button {
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  background: hsla(220, 12%, 81%, 1);
+  background: hsla(227, 33%, 80%, 1);
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -343,7 +343,7 @@ button {
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  background: hsla(220, 12%, 81%, 1);
+  background: hsla(227, 33%, 80%, 1);
   transform: scale(1.1);
   transition: 0.3s;
 }
