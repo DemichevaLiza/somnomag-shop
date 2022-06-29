@@ -109,6 +109,11 @@ button {
   margin: 15px auto;
 }
 
+button:hover {
+  background:
+      hsla(245, 100%, 12%, 0.8);
+}
+
 .check, .check2 {
   left: 25px;
   cursor: pointer;
